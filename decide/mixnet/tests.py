@@ -11,12 +11,12 @@ from base import mods
 
 class MixnetCase(APITestCase):
 
-    def setUp(self):
-        self.client = APIClient()
-        mods.mock_query(self.client)
+#    def setUp(self):
+#        self.client = APIClient()
+#        mods.mock_query(self.client)
 
-    def tearDown(self):
-        self.client = None
+#    def tearDown(self):
+#        self.client = None
 
     def encrypt_msgs(self, msgs, pk, bits=settings.KEYBITS):
         p, g, y = pk
